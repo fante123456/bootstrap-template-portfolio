@@ -1,0 +1,66 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.photo img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.caption-title {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.caption-desc {
+  color: #555;
+  font-size: 0.95em;
+}
+
+footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.9em;
+  color: #888;
+  padding-bottom: 30px;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #000;
+}
+
+.lightbox:target {
+  display: flex;
+}
+
+#contact {
+  background-color: #fff;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin-top: 60px;
+  text-align: center;
+}
